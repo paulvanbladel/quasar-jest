@@ -16,4 +16,7 @@ $ quasar build
 
 # lint code
 $ quasar lint
+# test
+jest
+
 ```
