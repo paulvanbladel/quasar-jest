@@ -1,0 +1,32 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env", {
+        "modules": false,
+        "loose": false,
+        "useBuiltIns": "usage"
+      }
+    ],
+    [
+      "@babel/preset-stage-2", {
+        "modules": false,
+        "loose": false,
+        "useBuiltIns": true,
+        "decoratorsLegacy": true
+      }
+    ]
+  ],
+  "plugins": [
+    [
+     
+      "transform-imports",
+      {
+        "quasar": {
+          "transform": "quasar-framework/dist/babel-transforms/imports.mat.js",
+          "preventFullImport": false
+        }
+      }
+    ]
+  ],
+  "comments": false
+}
