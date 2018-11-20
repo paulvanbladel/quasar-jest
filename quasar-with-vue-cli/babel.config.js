@@ -8,7 +8,7 @@ module.exports = {
       {
         "quasar": {
           "transform": "quasar-framework/dist/babel-transforms/imports.mat.js",
-          "preventFullImport": true
+          "preventFullImport": false
         }
       }
     ]
