@@ -1,6 +1,6 @@
 import Quasar, * as All from 'quasar'
 import {mount, createLocalVue } from '@vue/test-utils'
-import QBUTTON from '@/components/QBtn-demo.vue'
+import QBUTTON from '../../src/components/QBtn-demo.vue'
 const localVue = createLocalVue()
 localVue.use(Quasar, {components: [All]})
 
