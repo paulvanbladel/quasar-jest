@@ -3,14 +3,20 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 describe('HelloWorld.vue', () => {
   it('renders props.msg when passed', () => {
-    const msg = 'new message'
+    const msg = 'hello'
+    const x = 4
+    const y = 9
     const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg }
+      propsData: { msg, x, y }
     })
-    expect(wrapper.text()).toMatch(msg)
+    expect(wrapper.text()).toMatch('13')
   })
-  it('dummy', () => {
-    let sum = 1 + 1
-    expect(sum).toBe(2)
+})
+
+import {add} from '@/components/calculator'
+describe('calculator class', () => {
+  it('should add numbers', () => {
+    let result = add(1,1)
+    expect(result).toBe(3)
   })
 })
