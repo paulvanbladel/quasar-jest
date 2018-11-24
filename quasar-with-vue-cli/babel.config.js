@@ -1,5 +1,19 @@
 module.exports = {
   presets: [
-    '@vue/app'
-  ]
+    '@vue/app',
+    
+  ],
+  plugins: [
+    [
+     
+      "transform-imports",
+      {
+        "quasar": {
+          "transform": "quasar-framework/dist/babel-transforms/imports.mat.js",
+          "preventFullImport": false
+        }
+      }
+    ]
+  ],
+  comments: false
 }
