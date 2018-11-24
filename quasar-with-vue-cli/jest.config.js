@@ -11,7 +11,8 @@ module.exports = {
     '^.+\\.jsx?$': 'babel-jest'
   },
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1'
+    '^@/(.*)$': '<rootDir>/src/$1',
+    'quasar': 'quasar-framework/dist/umd/quasar.mat.umd.min.js'
   },
   snapshotSerializers: [
     'jest-serializer-vue'
