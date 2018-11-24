@@ -1,4 +1,4 @@
-# quasar-with-vue-cli
+# app
 
 ## Project setup
 ```
