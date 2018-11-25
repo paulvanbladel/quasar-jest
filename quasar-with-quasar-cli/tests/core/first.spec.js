@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { add } from '../../src/core/first'
 describe('first', () => {
   it('should return 2', () => {
