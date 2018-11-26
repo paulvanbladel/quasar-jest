@@ -1,9 +1,11 @@
 module.exports = {
-  "presets": [
-    "@vue/app"
+  presets: [
+    '@vue/app',
+    
   ],
-  "plugins": [
+  plugins: [
     [
+     
       "transform-imports",
       {
         "quasar": {
@@ -12,5 +14,6 @@ module.exports = {
         }
       }
     ]
-  ]
+  ],
+  comments: false
 }

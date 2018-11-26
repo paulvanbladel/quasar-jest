@@ -5,46 +5,10 @@ import store from './store'
 
 import './styles/quasar.styl'
 import 'quasar-extras/material-icons'
-import {
-  Quasar, 
-  QBtn,
-  QLayout,
-  QLayoutHeader,
-  QLayoutDrawer,
-  QPage,
-  QPageContainer,
-  QToolbar,
-  QToolbarTitle,
-  QList,
-  QListHeader,
-  QItemSeparator,
-  QItem,
-  QItemSide,
-  QItemMain,
-} from 'quasar'
+import Quasar from 'quasar'
 
 Vue.use(Quasar, {
-  config: {},
-  components: {
-    QBtn,
-    QLayout,
-    QLayoutHeader,
-    QLayoutDrawer,
-    QPage,
-    QPageContainer,
-    QToolbar,
-    QToolbarTitle,
-    QList,
-    QListHeader,
-    QItemSeparator,
-    QItem,
-    QItemSide,
-    QItemMain,
-  },
-  directives: {
-  },
-  plugins: {
-  }
+  config: {}
  })
 
 Vue.config.productionTip = false

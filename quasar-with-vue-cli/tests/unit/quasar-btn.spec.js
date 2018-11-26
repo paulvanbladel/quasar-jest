@@ -1,10 +1,20 @@
 import Quasar, * as All from 'quasar'
-import {mount, createLocalVue } from '@vue/test-utils'
-import QBUTTON from '../../src/components/QBtn-demo.vue'
+import {mount, shallowMount, createLocalVue } from '@vue/test-utils'
+import HelloWorld from '@/components/HelloWorld.vue'
+import QBUTTON from '@/components/QBtn-demo.vue'
 const localVue = createLocalVue()
 localVue.use(Quasar, {components: [All]})
 
-
+describe('HelloWorld.vue', () => {
+  it('renders props.msg when passed', () => {
+    const msg = 'new message'
+    const wrapper = shallowMount(HelloWorld, {
+      localVue,
+      propsData: { msg }
+    })
+    expect(wrapper.text()).toMatch(msg)
+  })
+})
 
 describe('Render, build and wire up a quasar component', () => {
   // const localVue = createLocalVue();
