@@ -1,6 +1,6 @@
 import Quasar, * as All from 'quasar'
-import {mount, shallowMount, createLocalVue } from '@vue/test-utils'
-import HelloWorld from '@/components/HelloWorld.vue'
+import {mount, shallowMount, createLocalVue} from '@vue/test-utils'
+import HelloWorld from '../../src/components/HelloWorld.vue'
 import QBUTTON from '@/components/QBtn-demo.vue'
 const localVue = createLocalVue()
 localVue.use(Quasar, {components: [All]})
