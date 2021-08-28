@@ -16,7 +16,7 @@ describe('HelloWorld.vue', () => {
   })
 })
 
-describe('Render, build and wire up a quasar component', () => {
+describe('QBUTTON', () => {
   // const localVue = createLocalVue();
   // localVue.use(Quasar, { components: ['QBtn']})
   const wrapper = mount(QBUTTON, {
@@ -25,7 +25,7 @@ describe('Render, build and wire up a quasar component', () => {
   const vm = wrapper.vm
   // console.log(wrapper)
 
-  it('passes the sanity check and creates a wrapper', () => {
+  it('check QBUTTON is a Vue Instance', () => {
     expect(wrapper.isVueInstance()).toBe(true)
   })
 
